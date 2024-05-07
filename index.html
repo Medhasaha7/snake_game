@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Snake</title>
+    <link rel=stylesheet id="style" type="text/css" href="assets/css/main-snake.css" />
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <style>
+        .snake-toolbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10000;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="snake-toolbar">
+        <div style="display:inline-block;margin-right:10px;">
+            <span>Mode:</span>
+            <select id="selectMode">
+                <option value="100" selected>Easy</option>
+                <option value="75">Medium</option>
+                <option value="50">Hard</option>
+                <option value="25">Impossible</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="mode-wrapper" style="display: inline; width: auto;">
+    </div>
+
+    <div id="game-area" tabindex="0">
+    </div>
+    <script type="text/javascript" src="assets/js/snake.js"></script>
+    <script type="text/javascript" src="assets/js/init.js"></script>
+</body>
+
+</html>
